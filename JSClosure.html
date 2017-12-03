@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Function</title>
+</head>
+<body>
+	<form>
+         <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+      
+    <p>Use different parameters inside the function and then try...</p>
+            
+
+	<script type="text/javascript">
+		function hypotenuse(a, b) {
+               function square(x) { return x*x; }
+               return Math.sqrt(square(a) + square(b));
+            }
+            
+        function secondFunction(){
+               var result;
+               result = hypotenuse(1,2);
+               document.write ( result );
+        }
+
+        <p>Click the following button to call the function</p>
+      
+      
+	
+	</script>
+
+</body>
+</html>
